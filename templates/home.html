@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prediction</title>
+</head>
+<body>
+    <h1>Forest Fire Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <input type="text" name="Oxygen" placeholder="Oxygen">
+        <input type="text" name="Temperature" placeholder="Temperature">
+        <input type="text" name="Humidity" placeholder="Humidity">
+        <button type="submit">predict</button>
+
+    </form>
+   {{ pred }}
+   {{ Hello }} 
+</body>
+</html>
